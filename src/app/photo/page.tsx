@@ -1,5 +1,5 @@
 export default async function Page () {
-    "use server";
+    "use client";
     await new Promise<string>((resolve) => {
       console.log('in executing sleep!')
       setTimeout(() => resolve("after 3000 ms!"), 3000);
